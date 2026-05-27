@@ -1,0 +1,179 @@
+body {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f52e2e 0%, #ffc002 100%);
+    color: #000;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+header img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(5, 5, 5, 0.8);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 999px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background: rgba(248, 250, 252, 0.18);
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 50px;
+    margin: 20px auto;
+    background: #000;
+    border-radius: 24px;
+    max-width: 1100px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.kortit {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.kortti {
+    background: linear-gradient(180deg, #000000 0%, #000000 100%);
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.18);
+}
+
+button {
+    background: #ff0000;
+    color: rgb(0, 0, 0);
+    padding: 14px 24px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    background: #ffae00;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+th,
+td {
+    border-bottom: 1px solid #ffdd00;
+    padding: 16px 14px;
+    text-align: left;
+}
+
+th {
+    background: #000;
+    color: #ff3838;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+form {
+    display: grid;
+    gap: 14px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #000;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+footer {
+    background: #0f172a;
+    color: #000;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 768px) {
+    .kortit {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        margin: 16px 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+.custom-header {
+    background: linear-gradient(135deg, #f52e2e 0%, #ffc002 100%);
+    color: #000;
+}
+
+.bg-footer {
+    background: #0f172a;
+    color: #000;
+}
