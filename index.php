@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <header class="custom-header text-center py-4">
     <div class="container d-flex flex-column align-items-center">
         <div class="d-flex align-items-center gap-3 mb-3">
-            <img src="" alt="Profiilikuva" class="profile-img rounded-circle">
+            <img src="profiilikuva.jpg" alt="Profiilikuva" class="profile-img rounded-circle">
             <h1 class="h3 mb-0">Tuukka Heikkinen</h1>
         </div>
 
